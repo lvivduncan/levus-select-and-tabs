@@ -45,7 +45,6 @@
 
   // обробка кліків по вкладках
   function blocks(num = 0){
-    const arr = [...uls[num].children];
     [...uls[num].children].forEach((li, index) => {
         li.addEventListener('click', function(){
           const articles = [...this.parentNode.nextElementSibling.children];
